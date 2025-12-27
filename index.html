@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shedrack Web Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+    <div class="hero-box">
+        <h1>Shedrack Web Services</h1>
+        <p>Tunakutengenezea website za biashara, shule na taasisi.</p>
+        <button onclick="alert('Asante kwa kuwasiliana nasi!')">Wasiliana Nasi</button>
+    </div>
+</div>
+
+<div class="contact">
+    <!-- Jina & Email -->
+    <div class="contact-box">
+        <h2>Jina & Email</h2>
+        <input type="text" id="name" placeholder="Jina lako"><br>
+        <input type="email" id="email" placeholder="Barua pepe">
+    </div>
+
+    <!-- Huduma Zetu -->
+    <div class="contact-box message-box">
+        <h2>Huduma Zetu</h2>
+        <button id="showOptionsBtn" onclick="toggleOptions()">Bonyeza hapa kuonyesha huduma</button>
+        <div id="serviceOptions" style="display:none; margin-top: 10px;">
+            <select id="predefinedService">
+                <option value="Website ya biashara">Website ya biashara</option>
+                <option value="Website ya shule au taasisi">Website ya shule au taasisi</option>
+                <option value="Redesign ya website">Redesign ya website</option>
+                <option value="SEO na Digital Marketing">SEO na Digital Marketing</option>
+                <option value="Support & Maintenance">Support & Maintenance</option>
+            </select><br>
+            <button onclick="sendMessage()">Wasilisha Huduma</button>
+        </div>
+    </div>
+</div>
+
+<!-- History ya messages -->
+<div id="messageHistory" style="margin-top:15px; text-align:center;">
+    <h3>History ya Messages:</h3>
+    <ul id="historyList"></ul>
+</div>
+
+
+    <div class="contact-box">
+        <h2>Action</h2>
+        <button onclick="sendMessage()">Tuma Ujumbe</button>
+        <div id="messageHistory" style="margin-top:15px;">
+            <h3>History ya Messages:</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
